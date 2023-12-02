@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src = "https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <title>Portfolio</title>
+    
+</head>
+<body>
+
+    <!-- Navegacion -->
+    <div class = "content-header"> 
+        <header>
+            <div class = "logo">
+                <a href="#"><span>J</span><span>G</span></a>
+            </div>
+            <nav id = "nav">
+                <ul>
+                    <li><a href="#home" onclick="select()">Home</a></li>
+                    <li><a href="#aboutme" onclick="select()">About Me</a></li>
+                    <li><a href="#projects" onclick="select()">Projects</a></li>
+                    <li><a href="#contact" onclick="select()">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class = "btn-contact">
+                <a href="Documents/CV Jose Tomas Grangetto.pdf" download="CV-Jose-Grangetto">
+                    <button>
+                        Resume <i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </a>
+            </div>
+            <div class = "nav-responsive" onclick="showHideMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Inicio -->
+    <section id = "home" class = "home">
+        <div class = "content-home">
+            <h2>Hi!, I'm <span>José</span></h2>
+            <h4>Software Engineer</h4>
+            <p>Passionate about software, data science and artificial intelligence.</p>
+            <div class = "btn-proyect">
+                <a href="#projects">See Projects</a>
+            </div>
+        </div>
+        <!-- Animaciones Lottie -->
+        <div id="lottie-container"></div>
+        <div id="lottie-container-2"></div>
+    </section>
+
+    <!-- Sobre Mi -->
+    <section id="aboutme" class="aboutme">
+        <div class = "content-section">
+            <h2>About Me</h2>
+            <p>I am <span>Jose Tomas Grangetto</span>from Cordoba, Argentina, enthusiastic about software development and the application of data science to solve real-world problems. Currently studying a degree in Software Engineering at Universidad Siglo 21, where I acquire theoretical and practical foundations in computer systems programming. I consider myself an organized, proactive individual eager to learn. My goal is to grow professionally and create innovative, efficient solutions that contribute value to society. I aspire to work on projects allowing me to merge my interests in software and data within the industrial sector.</p>
+    
+            <div class = "row">
+                <!-- Skills -->
+                <div class = "col">
+                    <h3>Skills</h3>
+                    <div class = "content-interests">
+                        <div class = "interests">
+                            <i class="fa-brands fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class = "interests">
+                            <i class="fa-brands fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class = "interests">
+                            <i class="fa-solid fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class = "interests">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span>PowerBI</span>
+                        </div>
+                        <div class = "interests">
+                            <i class="fa-brands fa-unity"></i>
+                            <span>SketchUP</span>
+                        </div>
+                        <div class = "interests">
+                            <i class="fa-brands fa-autoprefixer"></i>
+                            <span>AutoCAD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id = "projects" class = "projects">
+        <div class="content-section">
+            <h2>Projects</h2>
+            <div class="gallery">
+                <div class = "project">
+                    <img src="Images/Formula-1-dashboard.png" alt="">
+                    <div class="overlay">
+                        <h3>Formula 1</h3>
+                        <p>Data analysis - Database</p>
+                        <a href=""> </a>
+                        <a href=""target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class = "project">
+                    <img src="Images/Formula-1-dashboard.png" alt="">
+                    <div class="overlay">
+                        <h3>Spotify API</h3>
+                        <p>Data Science - APIs</p>
+                        <p>Python - *Nose*</p>
+                        <a href=""> </a>
+                        <a href=""target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class = "project">
+                    <img src="Images/Formula-1-dashboard.png" alt="">
+                    <div class="overlay">
+                        <h3>Wheater API</h3>
+                        <p>APIs - App development</p>
+                        <p>Java - *Nose*</p>
+                        <a href=""> </a>
+                        <a href=""target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class = "project">
+                    <img src="Images/Formula-1-dashboard.png" alt="">
+                    <div class="overlay">
+                        <h3>This Page</h3>
+                        <p>Frontend - Backend</p>
+                        <p>HTML - CSS - Java</p>
+                        <a href=""> </a>
+                        <a href=""target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id = "contact" class = "contact">
+        <div class="content-section">
+        <form action="https://formsubmit.co/your@email.com" method="POST" ">
+            <h2>Contact</h2>
+            <div class = "row">
+                <!-- Formulario -->
+                <div class = "col">
+                    <input type="text" name = "name" placeholder="Name">
+                    <input type="text" name = "email" placeholder="Email">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button>
+                        Send Message <i class="fa-solid fa-paper-plane"></i>
+                        <span class = "overlay"></span>
+                    </button>
+                    <h3>or contact me by</h3>
+                    <div class="networks">
+                        <a href="https://www.linkedin.com/in/jos%C3%A9-tom%C3%A1s-g-6a06a1223/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/josetomas09" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fjosetomas91" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <a href="#home" class = "up">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+        <div class="networks">
+            <a href="https://www.linkedin.com/in/jos%C3%A9-tom%C3%A1s-g-6a06a1223/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/josetomas09" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fjosetomas91" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div class="group-1">
+            <small>&copy;2023 <b>Jose Grangetto</b> - made by me 🙂</small>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

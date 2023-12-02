@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color-primario: #fffcf9;
+    --color-secundario: #005690; /*   Rojo: #E32828
+                                        Azul:#3772ff   */
+}
+
+
+
+
+/* Menu */
+
+.content-header header{
+    scroll-margin-top: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background: #002137;
+}
+.content-header header.below{
+    scroll-margin-top: 80px;
+    background: #00111C;
+}
+.content-header header .logo a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.7em;
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: bold; /* Corroborar si esta bien */
+    letter-spacing: 1px;
+}
+.content-header header .logo a span{
+    color: var(--color-secundario);
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-header header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.content-header header nav ul li a{
+    position: relative;
+    text-align: none;
+    color: var(--color-primario);
+    margin: 0 15px;
+    padding: 3px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 1.5em;
+    align-items: center;
+}
+.content-header header nav ul li a:hover{
+    color: var(--color-secundario);
+}
+.content-header .btn-contacto button{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--color-secundario);
+    border: 2px solid var(--color-secundario);
+    width: fit-content;
+    display: flex;
+    margin: 20px 10px;
+    padding: 8px 35px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+    align-items: center;
+    
+}
+.content-header .btn-contact a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.content-header .btn-contact button{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--color-secundario);
+    border: 2px solid var(--color-secundario);
+    width: fit-content;
+    display: flex;
+    margin: 20px 10px;
+    padding: 8px 35px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+    align-items: center;
+    
+}
+.content-header .btn-contact button i{
+    margin-left: 15px;
+}
+.content-header .btn-contact button:hover{
+    color: var(--color-secundario);
+    background: transparent;
+}
+.nav-responsive{
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+/* Inicio */
+
+.home{
+    scroll-margin-top: 80px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #002137;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+.content-home{
+    max-width: 500px;
+    color: var(--color-primario);
+}
+.content-home h2{
+    font-size: 3em;
+}
+.content-home h2 span{
+    color: var(--color-secundario);
+}
+.content-home h4 {
+    font-size: 2em;
+}
+.content-home p{
+    font-size: 1.4em;
+    padding: 10px 0 40px 0;
+}
+.btn-proyect a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: var(--color-secundario);
+    border-radius: 10px;
+    border: 2px solid var(--color-secundario);
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-proyect a:hover{
+    background-color: transparent;
+    color: var(--color-secundario);
+}
+/* Animaciones */
+#lottie-container {
+    width: 500px;
+    height: 500px;
+    margin-left: 700px; /* X */
+    margin-top: 50px;   /* Y */
+}
+#lottie-container-2 {
+    width: 350px; 
+    height: 350px; 
+    margin-top: -270px;   /* Y */
+    margin-left: -1555px; /* X */
+}
+
+
+
+
+/* Sobre Mi */
+
+.aboutme{
+    scroll-margin-top: 80px;
+    background-color: #002E4E;
+    color: #fff;
+    padding: 50px 100px;
+}
+.aboutme .content-section{
+    max-width: 1100px;
+    margin: auto;
+}
+.aboutme h2{
+    font-size: 48px;
+    text-align: left;
+    padding: 20px 0.01;
+}
+.aboutme .content-section p{
+    font-size: 1.2em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font: 1px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.aboutme .content-section p span{
+    color: var(--color-secundario);
+    font-weight: bold ;
+}
+.aboutme .row{
+    display: flex;
+}
+.aboutme .row .col h3{
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.aboutme .row .col .content-interests{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.aboutme .row .col .content-interests .interests{
+    width: 100px;
+    height: 100%;
+    background-color: #00213742;
+    margin: 0 80px 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    padding: 20px;
+    border-radius: 10px;
+}
+.aboutme .row .col .content-interests .interests i{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Proyectos */
+
+.projects{
+    scroll-margin-top: 80px;
+    background-color: #002137;
+    color: #fff;
+    padding: 50px 100px;
+}
+.projects .content-section{
+    max-width: 1100px;
+    margin: auto;
+}
+.projects h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0.01;
+}
+.projects .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.projects .gallery .project{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.projects .gallery .project img{
+    width: 100%;
+    display: block;
+}
+.projects .gallery .project .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #00111c81;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.projects .gallery .project .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.projects .gallery .project .overlay a{
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 1s;
+    color: #fff;
+}
+.projects .gallery .project .overlay:hover{
+    opacity: 1;
+}
+.projects .gallery .project .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+
+
+
+/* Contacto */
+
+.contact{
+    scroll-margin-top: 80px;
+    background-image: url(images/dots-map.png);
+    background-color: #002945;
+    color: #fff;
+    padding: 50px 0;
+}
+.contact .content-section{
+    max-width: 1100px;
+    margin: auto;
+}
+.contact h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0.01;
+}
+.contact .row{
+    display: flex;
+}
+.contact .col{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+.contact .col input, .contact .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #00111C;
+    color: #fff;
+    font-size: 18px;
+}
+.contact button{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid var(--color-secundario);
+    width: fit-content;
+    display: flex;
+    margin: 20px 10px;
+    padding: 8px 35px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+    align-items: center;
+}
+.contact button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-secundario);
+    z-index: -1;
+    transition: 0.3s;
+}
+.contact button:hover .overlay{
+    width: 100%;
+}
+.contact button i{
+    margin-left: 10px;
+}
+.contact .networks{
+    position: absolute;
+    z-index: 10;
+    width: 250px;
+    height: 50px;
+    margin-left: 835px;
+    margin-top: -40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.contact .networks a{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid var(--color-secundario);
+    border-radius: 50%;
+    transition: 0.3s;
+    margin: 50px 10px;
+}
+.contact h3{
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: -60px;
+}
+
+
+
+/* Footer */
+
+footer{
+    background-color: #00111C;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .networks{
+    margin-bottom: 5px;
+}
+footer .networks a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    line-height: 32px;
+    margin: 50px 1px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+footer .up{
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-color: transparent;
+    border: 2px solid var(--color-secundario);
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 55%;
+    line-height: 55px;
+    font-size: 25px;
+}
+footer .up:hover{
+    top: -32px;
+}
+
+
+
+/* Resposive */
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px){
+    .aboutme .row{
+        display: block;
+    }
+    .aboutme .row .col{
+        width: fit-content;
+    }
+
+    .projects .gallery{
+        display: block;
+        width: 100%;
+    }
+    .projects .gallery .project{
+        max-width: 100%;
+    }
+    .projects .gallery .project img{
+        width: 100%;
+    }
+    .contact .row{
+        display: block;
+    }
+    .contact .row .col{
+        width: 100%;
+    }
+}
